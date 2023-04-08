@@ -3,11 +3,13 @@ const multer = require('multer');
 const axios = require('axios').default;
 const FormData = require('form-data');
 const fs = require('fs');
+require('dotenv').config();
+
 
 const app = express();
 const upload = multer({ dest: 'uploads/' });
 
-const SECRET_KEY = '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';
+const SECRET_KEY = process.env.SECRET_KEY;
 
 const getTranscription = async (audioFile) => {
   try {
