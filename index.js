@@ -1,6 +1,6 @@
 const express = require('express');
 const multer = require('multer');
-const axios = require('axios');
+const axios = require('axios').default;
 const FormData = require('form-data');
 const fs = require('fs');
 
