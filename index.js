@@ -7,7 +7,7 @@ const fs = require('fs');
 const app = express();
 const upload = multer({ dest: 'uploads/' });
 
-const SECRET_KEY = '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';
+const SECRET_KEY = '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';
 
 const getTranscription = async (audioFile) => {
   try {
